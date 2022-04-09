@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, initial-scale=1.0, user-scalable=no">
+        <meta name="format-detection" content="telephone=no">
+        <title>Car Showroom | Shop Main</title>
+
+        <link type="text/css" rel="stylesheet" href="css/slick-theme.css">
+        <link type="text/css" rel="stylesheet" href="css/slick.css">
+        <link type="text/css" rel="stylesheet" href="css/style.css">
+        <link type="text/css" rel="stylesheet" href="css/product-page.css">
+        <link type="text/css" rel="stylesheet" href="css/shop-main.css">
+
+        <link rel="manifest" href="img/favicon/manifest.json">
+        <meta name="msapplication-TileColor" content="#ffffff">
+        <meta name="theme-color" content="#ffffff">
+
+    </head>
+
+    <body>
+        <div class="main-wrap">
+            <!--  Beginning header section 
+            ===============================  -->
+            <header class="main-header-section">
+                <div class="common-wrap clear">
+                    <div class="logo-wrap">
+                        <div class="main-logo">
+                            <a href="index.html"><img src="svg/black-logo.svg" alt=""></a>
+                        </div>
+                        <div class="phone-nav" id="phone-nav">
+                            <div class="link-line white-line">Menu</div>
+                        </div>
+                        <div class="cart-content">
+                            <span>Cart</span>
+                            <div class="cart-counter">
+                                <dfn>0</dfn>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <header class="main-header-section fixed-nav">
+                <div class="common-wrap clear">
+                    <div class="logo-wrap">
+                        <div class="phone-nav" id="phone-nav">
+                            <div class="link-line">Menu</div>
+                        </div>
+                        <div class="cart-content">
+                            <span>Cart</span>
+                            <div class="cart-counter">
+                                <dfn>0</dfn>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <div class="nav-modal-wrap">
+                <div class="common-wrap clear">
+                    <div class="nav-modal-top">
+                        <div class="back-btn link-line white-line">back</div>
+                        <a class="modal-logo" href="index.html"><img src="svg/white-logo.svg" alt=""></a>
+                        <div class="cart-content">
+                            <span>Cart</span>
+                            <div class="cart-counter">
+                                <dfn>0</dfn>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="nav-modal-item-wrap">
+                        <div class="nav-modal-item">
+                            <div class="main-nav">
+                                <ul>
+                                    <li class="fade-from-top delay-01 "><a href="#" class="link-line white-line">CAR</a></li>
+                                    <li class="fade-from-top delay-02 "><a href="#" class="link-line white-line">BIKE</a></li>
+                                    <li class="fade-from-top delay-03 "><a href="#" class="link-line white-line">Distillery</a></li>
+                                    <li class="fade-from-top delay-04 "><a href="#" class="link-line white-line">our story</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="nav-modal-item fade-from-top delay-07">
+                            <h3>Distillery</h3>
+                            <div class="opening-time-table">
+                                <address> Stauningvej 38 - 6900 Skjern - Denmark </address>
+                                <label> Opening hours: </label>
+                                <p>We’re open again. Though for the time being, we have restricted opening hours.</p>
+                                <ul>
+                                    <li>Monday: 10.00 am – 15.00 pm </li>
+                                    <li>Tuesday: 10.00 am – 15.00 pm </li>
+                                    <li>Wednesday: 10.00 am – 15.00 pm</li>
+                                    <li>Thursday: 10.00 am – 15.00 pm </li>
+                                    <li>Friday: 10.00 am – 15.00 pm </li>
+                                    <li>Saturday-Sunday: Closed (Holidays): Closed </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="nav-modal-item">
+                            <div class="nav-modal-link fade-from-top delay-08 ">
+                                <h3>Guided Tour</h3>
+                                <a href="#" class="link-line white-line">Book Tour</a>
+                            </div>
+                            <div class="nav-modal-link fade-from-top delay-09">
+                                <h3>Stockists</h3>
+                                <a href="#" class="link-line white-line">View all retailers</a>
+                            </div>
+                            <div class="nav-modal-link mobi fade-from-top delay-10">
+                                <h3>Contact</h3>
+                                <a href="#" class="link-line white-line">Find us</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="link-wrap">
+                        <div class="nav-social-link">
+                            <ul>
+                                <li class="slide-in-left delay-05"><a href="#" class="link-line white-line">Facebook</a></li>
+                                <li class="slide-in-left delay-06"><a href="#" class="link-line white-line">Instagram</a></li>
+                            </ul>
+                        </div>
+                        <div class="copy-right"><span>&copy; 2020 staining</span></div>
+                    </div>
+                </div>
+            </div>
+            <!-- //End header section -->
+            <!-- Cart Wrap -->
+            <section class="cart-wrap">
+                <div class="cart-main">
+                    <div class="order-title">
+                        <span>Your order: <dfn>1 item</dfn></span>
+                    </div>
+                    <div class="cross-btn">
+                        <img src="svg/Group-103.svg" alt="">
+                    </div>
+                    <div class="cart-onorder-content">
+                        <!--<form action="" method="post">-->
+                        <div class="cart-onorder-item-wrap">
+                            <div class="cart-onorder-item">
+                                <div class="cart-order-number">
+                                    <div class="number-input">
+                                        <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()" ></button>
+                                        <input class="quantity" min="0" name="quantity" value="1" type="number">
+                                        <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()" class="plus"></button>
+                                    </div>
+                                </div>
+                                <div class="cart-order-thumb">
+                                    <img src="img/Mockup_Kaos_01.png" alt="">
+                                </div>
+                                <div class="cart-order-name">
+                                    <span>Stauning Kaos</span>
+                                </div>
+                                <div class="cart-order-quantity">
+                                    <span>50 cl</span>
+                                </div>
+                                <div class="cart-order-price">
+                                    <span>KR 495. <sup>95</sup></span>
+                                </div>
+                                <div class="order-remove-btn">
+                                    <span>Remove</span>
+                                </div>
+                            </div>
+                            <div class="cart-onorder-item">
+                                <div class="cart-order-number">
+                                    <div class="number-input">
+                                        <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()" ></button>
+                                        <input class="quantity" min="0" name="quantity" value="1" type="number">
+                                        <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()" class="plus"></button>
+                                    </div>
+                                </div>
+                                <div class="cart-order-thumb">
+                                    <img src="img/Mockup_Kaos_01.png" alt="">
+                                </div>
+                                <div class="cart-order-name">
+                                    <span>Stauning Kaos</span>
+                                </div>
+                                <div class="cart-order-quantity">
+                                    <span>50 cl</span>
+                                </div>
+                                <div class="cart-order-price">
+                                    <span>KR 495. <sup>95</sup></span>
+                                </div>
+                                <div class="order-remove-btn">
+                                    <span>Remove</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="order-checkout-wrap">
+                            <div class="order-checkout-content">
+                                <dfn>Shipping &amp; taxes calculated at checkout</dfn>
+                                <div class="order-checkout-price">
+                                    <span>KR 495. <sup>95</sup></span>
+                                    <div class="order-checkout-btn">
+                                        <input type="submit" value="Checkout">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--</form>-->
+
+                    </div>
+                </div>
+                <div class="cart-bg"></div>
+            </section>
+            <!-- Cart Wrap -->
+
+            <!-- Beginning main content section 
+            ==================================== -->
+            <section class="main-content-wrap shop-main-content">
+            <!-- Fixed Tab Scroll Wrap -->
+             <div class="fixed-tab-scroll-wrap desk">
+                 <a href="#4">Car</a>
+                 <a href="#5">Limited Edition</a>
+                 <a href="#6">Casks</a>
+             </div>
+            <!-- Fixed Tab Scroll Wrap -->
+            
+            <!-- Beginning product-overview -->
+            <section class="page-section product-overview-wrap" id="4">
+                <div class="common-wrap clear">
+                    <div class="product-gallery-inner">
+                        <div class="product-heading">
+                            <div class="heading-text">
+                                <span>Our Shop</span>
+                                <h2>Heading for a section about purchasing something else. </h2>
+                            </div>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in.</p>
+                        </div>
+                        <div class="product-gallery-item-wrap product-gallery-slider">
+                            <div class="product-gallery-item">
+                                <figure>
+                                    <img class="desk" src="img/shop-main/car1.png" alt="">
+                                    <img class="mobi" src="imgshop-main/car1.png" alt="">
+                                </figure>
+                                <div class="slider-add-to-cart mobi">
+                                    <figure>
+                                        <img src="svg/add-to-cart.svg" alt="">
+                                    </figure>
+                                    <dfn>Add to cart</dfn>
+                                </div>
+                                <div class="product-gallery-content">
+                                    <div class="product-name">Stauning Rye </div>
+                                    <div class="product-price">Kr 495.<sup>95</sup> </div>
+                                </div>
+                            </div>
+                            <div class="product-gallery-item">
+                                <figure>
+                                    <img class="desk" src="img/shop-main/car2.png" alt="">
+                                    <img class="mobi" src="img/shop-main/car2.png" alt="">
+                                </figure>
+                                <div class="slider-add-to-cart mobi">
+                                    <figure>
+                                        <img src="svg/add-to-cart.svg" alt="">
+                                    </figure>
+                                    <dfn>Add to cart</dfn>
+                                </div>
+                                <div class="product-gallery-content">
+                                    <div class="product-name">Stauning Rye </div>
+                                    <div class="product-price">Kr 495.<sup>95</sup> </div>
+                                </div>
+                            </div>
+                            <div class="product-gallery-item">
+                                <figure>
+                                    <img class="desk" src="img/shop-main/car3.png" alt="">
+                                    <img class="mobi" src="img/shop-main/car3.png" alt="">
+                                </figure>
+                                <div class="slider-add-to-cart mobi">
+                                    <figure>
+                                        <img src="svg/add-to-cart.svg" alt="">
+                                    </figure>
+                                    <dfn>Add to cart</dfn>
+                                </div>
+                                <div class="product-gallery-content">
+                                    <div class="product-name">Stauning Rye </div>
+                                    <div class="product-price">Kr 495.<sup>95</sup> </div>
+                                </div>
+                            </div>
+                            <div class="product-gallery-item">
+                                <figure>
+                                    <img class="desk" src="img/shop-main/car4.png" alt="">
+                                    <img class="mobi" src="img/shop-main/car4.png" alt="">
+                                </figure>
+                                <div class="slider-add-to-cart mobi">
+                                    <figure>
+                                        <img src="svg/add-to-cart.svg" alt="">
+                                    </figure>
+                                    <dfn>Add to cart</dfn>
+                                </div>
+                                <div class="product-gallery-content">
+                                    <div class="product-name">Stauning Rye </div>
+                                    <div class="product-price">Kr 495.<sup>95</sup> </div>
+                                </div>
+                            </div>
+                            <div class="product-gallery-item">
+                                <figure>
+                                    <img class="desk" src="img/shop-main/car5.png" alt="">
+                                    <img class="mobi" src="img/shop-main/car5.png" alt="">
+                                </figure>
+                                <div class="slider-add-to-cart mobi">
+                                    <figure>
+                                        <img src="svg/add-to-cart.svg" alt="">
+                                    </figure>
+                                    <dfn>Add to cart</dfn>
+                                </div>
+                                <div class="product-gallery-content">
+                                    <div class="product-name">Stauning Rye </div>
+                                    <div class="product-price">Kr 495.<sup>95</sup> </div>
+                                </div>
+                            </div>
+                            <div class="product-gallery-item">
+                                <figure>
+                                    <img class="desk" src="img/shop-main/car6.png" alt="">
+                                    <img class="mobi" src="img/shop-main/car6.png" alt="">
+                                </figure>
+                                <div class="slider-add-to-cart mobi">
+                                    <figure>
+                                        <img src="svg/add-to-cart.svg" alt="">
+                                    </figure>
+                                    <dfn>Add to cart</dfn>
+                                </div>
+                                <div class="product-gallery-content">
+                                    <div class="product-name">Stauning Rye </div>
+                                    <div class="product-price">Kr 495.<sup>95</sup> </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+              </section>
+            <!-- End product-overview -->
+             
+            <!-- Beginning product about -->
+                <section class="page-section product-overview-wrap" id="5">
+                    <div class="common-wrap clear">
+                        <div class="product-gallery-inner">
+                            <div class="product-heading">
+                                <div class="heading-text">
+                                    <span>Limited edition</span>
+                                    <h2>Heading for a section about purchasing something else. </h2>
+                                </div>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
+                            </div>
+                            <div class="product-gallery-item-wrap product-gallery-slider">
+                                <div class="product-gallery-item">
+                                    <figure>
+                                        <img src="img/shop-main/car7.png" alt="">
+                                    </figure>
+                                    <div class="slider-add-to-cart mobi">
+                                        <figure>
+                                            <img src="svg/add-to-cart.svg" alt="">
+                                        </figure>
+                                        <dfn>Add to cart</dfn>
+                                    </div>
+                                    <div class="product-gallery-content">
+                                        <div class="product-name">Stauning Rye </div>
+                                        <div class="product-price">Kr 495.<sup>95</sup> </div>
+                                    </div>
+                                </div>
+                                <div class="product-gallery-item">
+                                    <figure>
+                                        <img src="img/shop-main/car8.png" alt="">
+                                    </figure>
+                                    <div class="slider-add-to-cart mobi">
+                                        <figure>
+                                            <img src="svg/add-to-cart.svg" alt="">
+                                        </figure>
+                                        <dfn>Add to cart</dfn>
+                                    </div>
+                                    <div class="product-gallery-content">
+                                        <div class="product-name">Stauning Rye </div>
+                                        <div class="product-price">Kr 495.<sup>95</sup> </div>
+                                    </div>
+                                </div>
+                                <div class="product-gallery-item">
+                                    <figure>
+                                        <img src="img/shop-main/car9.png" alt="">
+                                    </figure>
+                                    <div class="slider-add-to-cart mobi">
+                                        <figure>
+                                            <img src="svg/add-to-cart.svg" alt="">
+                                        </figure>
+                                        <dfn>Add to cart</dfn>
+                                    </div>
+                                    <div class="product-gallery-content">
+                                        <div class="product-name">Stauning Rye </div>
+                                        <div class="product-price">Kr 495.<sup>95</sup> </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            <!-- End product about -->
+              
+            <!-- Beginning product about -->
+                <section class="page-section product-overview-wrap" id="6">
+                    <div class="common-wrap clear">
+                        <div class="product-gallery-inner">
+                            <div class="product-heading">
+                                <div class="heading-text">
+                                    <span>Limited edition</span>
+                                    <h2>Heading for a section about purchasing something else. </h2>
+                                </div>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
+                            </div>
+                            <div class="product-gallery-item-wrap product-gallery-slider">
+                                <div class="product-gallery-item">
+                                    <figure>
+                                        <img src="img/shop-main/car10.png" alt="">
+                                    </figure>
+                                    <div class="slider-add-to-cart mobi">
+                                        <figure>
+                                            <img src="svg/add-to-cart.svg" alt="">
+                                        </figure>
+                                        <dfn>Add to cart</dfn>
+                                    </div>
+                                    <div class="product-gallery-content">
+                                        <div class="product-name">Stauning Rye </div>
+                                        <div class="product-price">Kr 495.<sup>95</sup> </div>
+                                    </div>
+                                </div>
+                                <div class="product-gallery-item">
+                                    <figure>
+                                        <img src="img/shop-main/car11.png" alt="">
+                                    </figure>
+                                    <div class="slider-add-to-cart mobi">
+                                        <figure>
+                                            <img src="svg/add-to-cart.svg" alt="">
+                                        </figure>
+                                        <dfn>Add to cart</dfn>
+                                    </div>
+                                    <div class="product-gallery-content">
+                                        <div class="product-name">Stauning Rye </div>
+                                        <div class="product-price">Kr 495.<sup>95</sup> </div>
+                                    </div>
+                                </div>
+                                <div class="product-gallery-item">
+                                    <figure>
+                                        <img src="img/shop-main/car12.png" alt="">
+                                    </figure>
+                                    <div class="slider-add-to-cart mobi">
+                                        <figure>
+                                            <img src="svg/add-to-cart.svg" alt="">
+                                        </figure>
+                                        <dfn>Add to cart</dfn>
+                                    </div>
+                                    <div class="product-gallery-content">
+                                        <div class="product-name">Stauning Rye </div>
+                                        <div class="product-price">Kr 495.<sup>95</sup> </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            <!-- End product about -->
+            
+        </section>
+        <!-- End main content section -->
+
+        <!-- Beginning footer section -->
+        <footer class="main-footer-section">
+                <div class="common-wrap clear">
+                    <div class="footer-logo">
+                        <a href="#">
+                            <img src="svg/footer-logo.svg" alt="">
+                        </a>
+                    </div>
+                    <div class="footer-nav">
+                        <ul>
+                            <li><a href="#" class="link-line">Contact us</a></li>
+                            <li><a href="#" class="link-line">Privacy and cookie notice</a></li>
+                            <li><a href="#" class="link-line">delivery &amp; returns</a></li>
+                            <li><a href="#" class="link-line">Legal notice</a></li>
+                            <li><a href="#" class="link-line">stockists</a></li>
+                        </ul>
+                        <div class="footer-copy-right">
+                            <p>COPYRIGHT &copy; 2020 Stauning Whisky</p>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+            <!-- //End main footer section -->
+        </div>
+        <script type="text/javascript" src="js/jquery-3.5.1.min.js"></script>      
+        <script type="text/javascript" src="js/slick.min.js"></script>
+        <script type="text/javascript" src="js/jquery.smooth-scroll.js"></script>
+        <script type="text/javascript" src="js/parallax.js"></script>
+        <script type="text/javascript" src="js/common-scripts.js" defer></script> 
+       
+    </body>
+</html>
